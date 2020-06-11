@@ -29,17 +29,32 @@ subButton.addEventListener("click", () => {
     resultSpanSub.textContent = (firstValueSub - secondValueSub);
 })
 
-const mulButton = document.getElementById('mul-button');
+const multButton = document.getElementById('mult-button');
 
-mulButton.addEventListener("click", () => {
-    const mulInput1 = document.getElementById("mul-one");
-    const mulInput2 = document.getElementById("mul-two");
-    const resultSpanMul = document.getElementById('mul-result');
+multButton.addEventListener("click", () => {
+    const multInput1 = document.getElementById("mult-one");
+    const multInput2 = document.getElementById("mult-two");
+    const resultSpanMult = document.getElementById('mult-result');
     
-    const firstValueMul = Number(mulInput1.value);
-    const secondValueMul = Number(mulInput2.value);
+    const firstValueMult = Number(multInput1.value);
+    const secondValueMult = Number(multInput2.value);
 
-    console.log(firstValueMul * secondValueMul);
+    console.log(firstValueMult * secondValueMult);
 
-    resultSpanMul.textContent = (firstValueMul * secondValueMul);
+    resultSpanMult.textContent = (firstValueMult * secondValueMult);
+})
+
+const divButton = document.getElementById('div-button');
+
+divButton.addEventListener("click", () => {
+    const divInput1 = document.getElementById("div-one");
+    const divInput2 = document.getElementById("div-two");
+    const resultSpanDiv = document.getElementById('div-result');
+    
+    const firstValueDiv = Number(divInput1.value);
+    const secondValueDiv = Number(divInput2.value);
+
+    console.log(firstValueDiv / secondValueDiv);
+
+    resultSpanDiv.textContent = (firstValueDiv / secondValueDiv);
 })

@@ -60,6 +60,9 @@ footer {
     box-shadow: var(--shadow);
 }
 
+h1 {
+    text-align: center;
+}
 
 h2 {
     font-size: 1.8rem;
