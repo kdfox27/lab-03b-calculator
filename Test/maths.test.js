@@ -4,7 +4,7 @@ import {add, sub, mult, div} from '../mathUtils.js'
 
 const test = QUnit.test;
 
-test('subtraction', function(expect) {
+test('addition', function(expect) {
     //Arrange
     // Set up your parameters and expectations
     const firstNumber = 15;
@@ -14,10 +14,10 @@ test('subtraction', function(expect) {
     // function sub(firstNumber, secondNumber) {
         // return firstNumber - secondNumber;
     // };
-    sub(firstNumber, secondNumber);
-    const actual = 6;
+    const expected = 75
+    const actual = mult(firstNumber, secondNumber);
 
     //Expect
     // Make assertions about what is expected versus the actual result
-    expect.equal(sub(firstNumber, secondNumber), 10);
+    expect.equal(expected, actual);
 });
